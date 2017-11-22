@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+	background-color: #ECEBF1;
+}
+
+menu {
+  display: inline-block;
+	margin-top: 0;
+}
+
+.rectangle {
+	height: 110px;
+	background-color: #2a9d2b;
+	border: solid 1px #2a9d2b;
+}
+
+.news-logo {
+	width: 127px;
+	height: 108px;
+}
+
+.news-now {
+	height: 86px;
+	width: 95px;
+	mix-blend-mode: darken;
+	font-family: Helvetica;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: oblique;
+	margin-top: 10px;
+	color: #000000;
+}
+
+.home {
+	height: 29px;
+  margin-left: 82px;
+	margin-top: 37px;
+	font-family: Helvetica;
+	font-size: 24px;
+	text-align: left;
+	color: #000000;
+}
+
+.about-us {
+	height: 29px;
+  margin-left:82px;
+	margin-top: 37px;
+	font-family: Helvetica;
+	font-size: 24px;
+	text-align: left;
+	color: #000000;
+}
+
+.contact-us {
+	width: 119px;
+	height: 29px;
+	margin-left: 82px;
+	margin-top: 37px;
+	font-family: Helvetica;
+	font-size: 24px;
+	text-align: center;
+	color: #000000;
+}
+
+.news-sources {
+	width: 119px;
+	height: 29px;
+	margin-left: 82px;
+	margin-top: 37px;
+	font-family: Helvetica;
+	font-size: 24px;
+	text-align: center;
+	color: #000000;
+}
+
+.man-coffee-cup-pen {
+	margin-left: 130px;
+	width: 1024px;
+	height: 686px;
+}
+
+.news-list {
+	display: inline-block;
+}
