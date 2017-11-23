@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import landingPageImage from '../../assets/images/man-coffee-cup-pen.jpg';
-import '../App.css';
+import '../../App.css';
 import '../../index.css'
 
 class Home extends Component {

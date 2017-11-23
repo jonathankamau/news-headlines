@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Menu from './common/Menu'
-import Routes from '../routes'
+import Menu from './components/common/Menu'
+import Routes from './routes'
 import './App.css';
-import '../index.css'
+import './index.css'
 
 class App extends Component {
   render() {
