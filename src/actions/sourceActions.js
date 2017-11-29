@@ -8,6 +8,7 @@ export function loadSourceSuccess(sources) {
 export function loadSources() {  
   return function(dispatch) {
     return sourceApi.getSources().then(sources => {
+      console.log(sources);
       dispatch(loadSourceSuccess(sources));
     }).catch(error => {
       throw(error);

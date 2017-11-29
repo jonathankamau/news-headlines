@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+    - source: /
+      destination: /home/ec2-user
+# # hooks:
+# # #  ApplicationStop:
+# # #    - location: deployment/index.js
+# # #      timeout: 180
+# #   BeforeInstall:
+# #     - location: src/index.js
+# #       timeout: 180
+# #   AfterInstall:
+# #     - location: src/index.js
+# #       timeout: 180
+# #   ApplicationStart:
+# #     - location: src/index.js
+# #       timeout: 180
+# #   ValidateService:
+# #     - location: src/index.js
+# #       timeout: 180

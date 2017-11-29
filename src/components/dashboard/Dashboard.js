@@ -6,25 +6,27 @@ import DashboardItems from './DashboardItems';
 import '../../index.css'
 
 class Sources extends Component {
-
   render() {
-    const sources = this.props.sources;
+    const props = this.props;
+     console.log('Dashboard Items',props);
+   //console.log('Dashboard Props',this.props);
     return (
       <div className="body">
-        <h1>News Sources</h1>
-        <DashboardItems sources={sources}/>
+        <h1 className='news-sources-heading'>News Sources</h1>
+        <DashboardItems props={props}/>
     </div>
     );
   }
+  
 }
 Sources.propTypes = {
-  sources: PropTypes.object.isRequired
+  sources: PropTypes.array.isRequired
 };
 
-function mapStateToProps(sources, props) {
+function mapStateToProps(state, props) {
 
   return {
-    sources: sources
+    sources: state.sources
   };
 
 } 
