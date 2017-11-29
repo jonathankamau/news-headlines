@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+
+import DashboardItems from './DashboardItems';
 import '../../index.css'
 
 class Sources extends Component {
-    state = {sources: []}
-
-  componentDidMount() {
-    fetch(`/sources`)
-    .then(res => res.json())
-    .then(items => this.setState({ sources: this.state.sources.concat(items.sources )}));
-    console.log(this.state);
-  }
 
   render() {
+    const sources = this.props.sources;
     return (
       <div className="body">
         <h1>News Sources</h1>
-        {this.state.sources.map(source =>
-          <div className='news-list' key={source.id}>{ source.name }</div>
-        )}
+        <DashboardItems sources={sources}/>
     </div>
     );
   }
 }
+Sources.propTypes = {
+  sources: PropTypes.object.isRequired
+};
 
-export default Sources;
+function mapStateToProps(sources, props) {
+
+  return {
+    sources: sources
+  };
+
+} 
+
+export default connect(mapStateToProps)(Sources);  

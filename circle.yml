@@ -1,0 +1,19 @@
+machine:
+  pre:
+    - mkdir ~/.yarn-cache
+  node:
+    version: 7.7.2
+dependencies:
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+  cache_directories:
+    - ~/.yarn-cache
+  override:
+    - yarn install
+test:
+  pre:
+    - yarn global add codeclimate-test-reporter
+  override:
+    - yarn test
+  post:
+    - CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN codeclimate-test-reporter < coverage/lcov.info
