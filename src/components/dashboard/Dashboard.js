@@ -11,7 +11,7 @@ class Sources extends Component {
     const sources = this.props.sources;
     return (
       <div className="body">
-        <h1>News Sources</h1>
+        <h1 className='news-sources-heading'>News Sources</h1>
         <DashboardItems sources={sources}/>
     </div>
     );
