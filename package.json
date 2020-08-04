@@ -20,7 +20,7 @@
     "redux": "^3.7.2",
     "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
-    "webpack": "^3.8.1"
+    "webpack": "^4.44.1"
   },
   "scripts": {
     "start": "react-scripts start",
